@@ -1,121 +1,122 @@
 .home {
-  padding: 0px 10px;
-  padding-bottom: 100px;
+  padding: 0px 10px; /* Kenar boşlukları ekleniyor */
+  padding-bottom: 100px; /* Sayfanın alt kısmına ekstra boşluk ekleniyor */
 }
 
 .hero {
-  max-width: 600px;
-  margin: 80px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 30px;
+  max-width: 600px; /* Hero kısmının maksimum genişliği belirleniyor */
+  margin: 80px auto; /* Ortalanıyor ve üst-alt boşluk ekleniyor */
+  display: flex; /* İçerik dikey olarak hizalanıyor */
+  flex-direction: column; /* İç elemanlar dikey diziliyor */
+  align-items: center; /* Elemanlar yatayda ortalanıyor */
+  text-align: center; /* İçerik ortalanıyor */
+  gap: 30px; /* Elemanlar arasına boşluk ekleniyor */
 }
 
 .hero h1 {
-  font-size: max(4vw, 36px);
+  font-size: max(4vw, 36px); /* Dinamik yazı boyutu ayarlanıyor */
 }
 
 .hero p {
-  width: 75%;
-  color: #e3e3e3;
-  line-height: 1.5;
+  width: 75%; /* Paragrafın genişliği belirleniyor */
+  color: #e3e3e3; /* Yazı rengi */
+  line-height: 1.5; /* Satır aralığı ayarlanıyor */
 }
 
 .hero form {
-  padding: 8px;
-  width: 80%;
-  background-color: white;
-  border-radius: 5px;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
+  padding: 8px; /* İç boşluk */
+  width: 80%; /* Formun genişliği belirleniyor */
+  background-color: white; /* Arka plan rengi */
+  border-radius: 5px; /* Köşeler yuvarlatılıyor */
+  font-size: 20px; /* Yazı boyutu */
+  display: flex; /* İç elemanları yatay hizalama */
+  justify-content: space-between; /* Elemanlar arasında boşluk bırakılıyor */
+  align-items: center; /* Dikey ortalama */
+  gap: 10px; /* Elemanlar arasındaki boşluk */
 }
 
 .hero input {
-  flex: 1;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  padding-left: 10px;
+  flex: 1; /* Input alanının esnekliği artırılıyor */
+  font-size: 16px; /* Yazı boyutu */
+  outline: none; /* Çerçeve kaldırılıyor */
+  border: none; /* Kenarlık kaldırılıyor */
+  padding-left: 10px; /* Sol iç boşluk */
 }
 
 .hero button {
-  border: none;
-  background: #7927ff;
-  color: white;
-  font-size: 16px;
-  padding: 10px 30px;
-  border-radius: 5px;
-  cursor: pointer;
+  border: none; /* Kenarlık kaldırılıyor */
+  background: #7927ff; /* Arka plan rengi */
+  color: white; /* Yazı rengi */
+  font-size: 16px; /* Yazı boyutu */
+  padding: 10px 30px; /* İç boşluk */
+  border-radius: 5px; /* Köşeler yuvarlatılıyor */
+  cursor: pointer; /* Buton üstüne gelince imleç değişiyor */
 }
 
 .crypto-table {
-  max-width: 800px;
-  margin: auto;
-  background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
-  border-radius: 15px;
+  max-width: 800px; /* Maksimum genişlik */
+  margin: auto; /* Ortalanıyor */
+  background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15)); /* Arka plana gradyan ekleniyor */
+  border-radius: 15px; /* Köşeler yuvarlatılıyor */
 }
 
 .table-layout {
-  display: grid;
-  grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
-  padding: 15px 20px;
-  align-items: center;
-  border-bottom: 1px solid #3c3c3c;
+  display: grid; /* Grid düzeni kullanılıyor */
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr; /* Sütun genişlikleri ayarlanıyor */
+  padding: 15px 20px; /* İç boşluk */
+  align-items: center; /* Dikey ortalama */
+  border-bottom: 1px solid #3c3c3c; /* Satırlar arasına çizgi ekleniyor */
 }
 
 .market-cap {
-  text-align: right;
+  text-align: right; /* Metni sağa hizalıyor */
 }
 
 .table-layout:last-child {
-  border: none;
+  border: none; /* Son satırın alt kenarlığı kaldırılıyor */
 }
 
 .table-layout div {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  display: flex; /* İç elemanlar yatay hizalanıyor */
+  align-items: center; /* Dikey ortalama */
+  gap: 10px; /* Elemanlar arası boşluk */
 }
 
 .table-layout div img {
-  width: 35px;
+  width: 35px; /* Görsellerin boyutu belirleniyor */
 }
 
 .table-layout .green {
-  color: #00D515;
-  text-align: center;
+  color: #00D515; /* Pozitif değişim için yeşil renk */
+  text-align: center; /* Metni ortalıyor */
 }
 
 .table-layout .red {
-  color: #ff4646;
-  text-align: center;
+  color: #ff4646; /* Negatif değişim için kırmızı renk */
+  text-align: center; /* Metni ortalıyor */
 }
 
+/* Mobil cihazlar için duyarlılık ayarları */
 @media (max-width: 768px) {
   .table-layout {
-    grid-template-columns: 0.5fr 3fr 1fr 1fr;
+    grid-template-columns: 0.5fr 3fr 1fr 1fr; /* Küçük ekranlarda sütun genişlikleri değiştiriliyor */
   }
 
   .market-cap {
-    display: none;
+    display: none; /* Piyasa değeri sütunu gizleniyor */
   }
 }
 
 @media (max-width: 500px) {
   .table-layout div img {
-    width: 25px;
+    width: 25px; /* Küçük ekranlarda ikon boyutu küçültülüyor */
   }
 
   .table-layout {
-    font-size: 13px;
+    font-size: 13px; /* Yazı boyutu küçültülüyor */
   }
 
   .hero form input {
-    width: 100px;
+    width: 100px; /* Küçük ekranlarda input genişliği küçültülüyor */
   }
 }
