@@ -1,91 +1,91 @@
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 10%;
-  color: #add;
-  border-bottom: 2px solid #3c3c3c;
+  display: flex; /* Navbar'ı flexbox ile düzenliyoruz */
+  align-items: center; /* Yatayda ortalamak için içerikleri hizalıyoruz */
+  justify-content: space-between; /* İçerikler arasında boşluk bırakıyoruz */
+  padding: 20px 10%; /* Navbar'ın üst ve alt padding'ini ayarlıyoruz */
+  color: #add; /* Yazı rengini belirliyoruz (ama burada geçerli olmayacak) */
+  border-bottom: 2px solid #3c3c3c; /* Navbar'a alt kenarlık ekliyoruz */
 }
 
 .navbar .logo {
-  width: max(12vw, 120px);
+  width: max(12vw, 120px); /* Logo genişliğini %12 viewport genişliği ya da 120px olarak ayarlıyoruz */
 }
 
 .navbar ul {
-  display: flex;
-  gap: 40px;
-  list-style: none;
+  display: flex; /* Menü öğelerini yatayda düzenliyoruz */
+  gap: 40px; /* Menü öğeleri arasına 40px boşluk bırakıyoruz */
+  list-style: none; /* Menü öğelerinin başındaki işaretleri kaldırıyoruz */
 }
 
 .navbar li {
-  cursor: pointer;
+  cursor: pointer; /* Menü öğelerine tıklanabilir işareti ekliyoruz */
 }
 
 .nav-right {
-  display: flex;
-  align-items: center;
-  gap: max(1vw, 12px);
+  display: flex; /* Sağ tarafa yerleştirilen öğeleri yatayda düzenliyoruz */
+  align-items: center; /* Sağ taraftaki öğeleri dikeyde ortalıyoruz */
+  gap: max(1vw, 12px); /* Sağ taraftaki öğeler arasında boşluk bırakıyoruz */
 }
 
 .navbar select {
-  padding: 5px 8px;
-  border-radius: 6px;
-  border: 2px solid white;
-  background: transparent;
-  color: white;
+  padding: 5px 8px; /* Para birimi seçme alanına padding ekliyoruz */
+  border-radius: 6px; /* Seçim kutusunun köşelerini yuvarlatıyoruz */
+  border: 2px solid white; /* Seçim kutusuna beyaz kenarlık ekliyoruz */
+  background: transparent; /* Seçim kutusunun arka planını saydam yapıyoruz */
+  color: white; /* Seçim kutusundaki yazı rengini beyaz yapıyoruz */
 }
 
 .navbar option {
-  background-color: #09005c;
-  color: white;
+  background-color: #09005c; /* Seçim kutusundaki seçeneklerin arka plan rengini koyu mor yapıyoruz */
+  color: white; /* Seçeneklerin yazı rengini beyaz yapıyoruz */
 }
 
 .navbar button {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 25px;
-  border-radius: 20px;
-  font-size: 15px;
-  font-weight: 500;
-  color: #393939;
-  background: white;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
+  display: flex; /* Butonu flexbox ile düzenliyoruz */
+  align-items: center; /* Butonun içindeki öğeleri dikeyde ortalıyoruz */
+  gap: 10px; /* Buton içindeki öğeler arasına 10px boşluk bırakıyoruz */
+  padding: 10px 25px; /* Butona padding ekliyoruz */
+  border-radius: 20px; /* Butonun köşelerini yuvarlatıyoruz */
+  font-size: 15px; /* Butondaki yazı boyutunu 15px yapıyoruz */
+  font-weight: 500; /* Buton yazısının kalınlığını belirliyoruz */
+  color: #393939; /* Buton yazısının rengini koyu gri yapıyoruz */
+  background: white; /* Butonun arka planını beyaz yapıyoruz */
+  border: none; /* Butonun kenarlığını kaldırıyoruz */
+  cursor: pointer; /* Butona tıklanabilir işareti ekliyoruz */
+  transition: background 0.3s ease-in-out; /* Butona hover efekti ekliyoruz */
 }
 
 .navbar button:hover {
-  background: transparent;
-  color: #fff;
+  background: transparent; /* Buton üzerine gelindiğinde arka planı saydam yapıyoruz */
+  color: #fff; /* Yazı rengini beyaz yapıyoruz */
 }
 
 .navbar button img {
-  width: 13px;
+  width: 13px; /* Ok simgesinin genişliğini 13px olarak ayarlıyoruz */
 }
 
 @media(max-width:900px) {
   .navbar {
-    padding: 20px 8%;
+    padding: 20px 8%; /* Ekran genişliği 900px'den küçük olduğunda navbar'ın padding'ini azaltıyoruz */
   }
 
   .navbar button {
-    gap: 7px;
-    font-size: 14px;
-    padding: 8px 18px;
+    gap: 7px; /* Buton içindeki öğeler arasındaki boşluğu 7px yapıyoruz */
+    font-size: 14px; /* Buton yazı boyutunu 14px yapıyoruz */
+    padding: 8px 18px; /* Butonun padding'ini küçültüyoruz */
   }
 }
 
 @media(max-width:768px) {
   .navbar {
-    padding: 20px 5%;
+    padding: 20px 5%; /* Ekran genişliği 768px'den küçük olduğunda navbar'ın padding'ini daha da küçültüyoruz */
   }
 
   .navbar ul {
-    display: none;
+    display: none; /* Menü öğelerini gizliyoruz */
   }
 
   .navbar button img {
-    width: 12px;
+    width: 12px; /* Ok simgesinin genişliğini 12px yapıyoruz */
   }
 }
